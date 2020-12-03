@@ -105,7 +105,7 @@ button
 
 .filtre
 {
-	margin-right: 30px;
+	margin-right: 40px;
 	margin-top: 20px;
 	padding: 5px;
 	font-weight: bold;
@@ -115,16 +115,14 @@ button
 {
 	display: flex;
 	align-items:center;
-	margin:20px 30px 0px 0px ;
+	margin:20px 40px 0px 0px ;
 	border: 2px solid #F2F2F2;
 	border-radius: 70px;
 	font-weight:bold;
-	padding: 2px 20px 2px 0px;
+	padding: 2px 50px 2px 0px;
 	width: auto;
 }
-/*
 
-*/
 .iconename:hover
 {
 	background-color:#DEEBFF;
@@ -133,7 +131,6 @@ button
 
 .iconemoney
 {
-	
 	color:#0065FC;
 	border-radius:70%;
 	padding:10px;
@@ -141,7 +138,8 @@ button
 	margin:0px;
 }
 
-.iconefamille{
+.iconefamille
+{
 	color:#0065FC;
 	border-radius:70%;
 	padding:10px;
@@ -181,7 +179,7 @@ button
 	align-items: center;
 	color:#0065FC ;
 	border-radius:70%;
-	padding:20px 15px 15px 20px;
+	padding:20px 15px 20px 20px;
 	background-color: white;
 	margin: 15px 15px 15px 0px;
 	border: 2px solid#F2F2F2;
@@ -196,20 +194,202 @@ button
 	color: grey;
 }
 
+section 
+{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start
+		justify-content:flex-start;
+		width: 800px;
+		background-color: #F2F2F2;
+		padding: 20px;
+		border-radius: 10px;
+		margin: 0px;
 
-.section 
+
+}
+
+
+figure
+{
+	display: block;
+	margin-inline-start: 0px;
+	margin-inline-end: 20px;
+	margin-block-start: 0px;
+	margin-block-end: 20px;
+	flex-wrap: wrap;
+	border: none;
+	padding:5px;
+	width: 230px;
+	background-color: white;
+	border-radius: 10px;
+}
+
+figure:hover
+{
+	background-color: lightblue;
+	color: #0065FC;
+	transition: 400ms;
+}
+
+a
+{
+	color: black;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #0065CF;
+}
+
+
+.iconestars
+{
+	padding: 5px;
+	color: #0065CF;
+}
+
+.imgsection
+{
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+h2{
+	padding: 0px;
+	margin: 0px;
+	height: 40px;
+	width: 100%;
+}
+
+h3
+{
+
+	width: 300px;
+	margin:0px;
+	padding: 15px 0px 15px 5px ;
+}
+
+.Afficherplus
+{
+	font-weight: bold;
+	
+}
+
+aside
 {
 	display: flex;
-	flex-wrap: wrap;
-	border: 2px solid black ;
-	padding: 20px;
-	max-width: 50%;
+	justify-content: left;
+	align-items: flex-start;
+	flex-direction: column;
+	margin-left: 60px;
 	background-color: #F2F2F2;
-	border-radius: 10px 10px 10px 10px;
+	border-radius: 10px;
+	width: 350px;
+	padding: 10px;
+	height: 550px;
+
 }
 
-.contour 
+.titre
 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+ aside figure 
+{
+	height: 130px;
+	width:300px;
+}
+
+.Afficherplus
+{
+	display: flex;
+	justify-content:flex-end;
+	align-items: flex-end;
+}
+
+.sectionaside
+{
+	display:flex;
+}
+
+.pop
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.imgaside
+{
+	display: block;
+	justify-content: flex-start;
+	align-items: flex-start;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
 
 }
+
+.lienaside
+{
+	display: flex;
+	margin-left: 10px;
+
+}
+
+.photosection2
+{
+	margin: 0px;
+	display: flex;
+	flex-direction:column;
+	flex-wrap: wrap;
+	border: 2px solid black;
+	max-width: 100%;
+	max-height: 500px;
+	font-weight: bold;
+}
+
+
+h2.Activité
+{
+	width: 100%;
+	padding:5px ;
+	margin:10px 10px 10px 0px ;
+}
+
+.imgactivité
+{
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 5px;
+
+}
+
+.figactivité 
+{
+	height: auto;
+	padding: 5px 15px 5px 5px;
+	display: block;
+
+}
+
+figcaption
+{
+	color: black;
+	padding: 10px ;
+	border:2px solid #0065CF;
+	margin-left: 5px;
+	width: 205px;
+}
+
+
 
