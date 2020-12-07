@@ -105,7 +105,7 @@ button
 
 .filtre
 {
-	margin-right: 30px;
+	margin-right: 40px;
 	margin-top: 20px;
 	padding: 5px;
 	font-weight: bold;
@@ -115,16 +115,14 @@ button
 {
 	display: flex;
 	align-items:center;
-	margin:20px 30px 0px 0px ;
-	border: 2px solid #F2F2F2;
-	border-radius: 70px;
+	margin:20px 40px 0px 0px ;
+	border: 3px solid #F2F2F2;
+	border-radius: 80px;
 	font-weight:bold;
-	padding: 2px 20px 2px 0px;
+	padding: 0px 50px 0px 0px;
 	width: auto;
 }
-/*
 
-*/
 .iconename:hover
 {
 	background-color:#DEEBFF;
@@ -133,7 +131,6 @@ button
 
 .iconemoney
 {
-	
 	color:#0065FC;
 	border-radius:70%;
 	padding:10px;
@@ -141,7 +138,8 @@ button
 	margin:0px;
 }
 
-.iconefamille{
+.iconefamille
+{
 	color:#0065FC;
 	border-radius:70%;
 	padding:10px;
@@ -181,7 +179,7 @@ button
 	align-items: center;
 	color:#0065FC ;
 	border-radius:70%;
-	padding:20px 15px 15px 20px;
+	padding:15px 15px 15px 20apx;
 	background-color: white;
 	margin: 15px 15px 15px 0px;
 	border: 2px solid#F2F2F2;
@@ -196,20 +194,254 @@ button
 	color: grey;
 }
 
+section 
+{
+	flex-wrap: wrap;
+	width: 800px;
+	background-color: #F2F2F2;
+	padding: 20px;
+	border-radius: 10px;
+	margin-left: 20px;
+}
 
-.section 
+figure
 {
 	display: flex;
+	margin: 10px;
 	flex-wrap: wrap;
-	border: 2px solid black ;
-	padding: 20px;
-	max-width: 50%;
-	background-color: #F2F2F2;
-	border-radius: 10px 10px 10px 10px;
+	border: none;
+	padding:5px;
+	width: 230px;
+	background-color: white;
+	border-radius: 10px;
 }
 
-.contour 
+figcaption.legende
+{	
+	display: flex;
+	flex-direction: column;
+	max-width:150px ;
+}
+
+.iconestars
+{
+	padding: 5px;
+	color: #0065CF;
+}
+
+.imgsection
+{
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+.iconestars
+{
+	display: flex;
+	flex-direction: row;
+
+}
+
+h2
+{
+	padding: 0px;
+	margin: 0px;
+	height: 40px;
+	width: 100%;
+}
+
+h3
+{
+	width: 300px;
+	margin:0px;
+	padding: 15px 0px 15px 5px ;
+}
+
+.Afficherplus
+{
+	font-weight: bold;
+	padding-left: 10px;
+}
+
+aside
+{
+	display: flex;
+
+	flex-direction: column;
+	margin-left: 70px;
+	background-color: #F2F2F2;
+	border-radius: 10px;
+	width: 350px;
+	padding: 5px;
+}
+
+main
+{
+	display: flex;
+	flex-direction: row;
+}
+
+.titre
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+ aside figure 
+{
+	height: 130px;
+	width:300px;
+	flex-direction: column;
+}
+
+.Afficherplus
+{
+	display: flex;
+	justify-content:flex-end;
+	align-items: flex-end;
+}
+
+.sectionaside
+{
+	display:flex;
+
+}
+
+.pop
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.imgaside
+{
+	display: block;
+	justify-content: flex-start;
+	align-items: flex-start;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	margin:0px;
+
+}
+
+.photosection2
+{
+	margin: 0px;
+	display: flex;
+	flex-direction:column;
+	flex-wrap: wrap;
+
+	max-width: 100%;
+	max-height: 500px;
+	font-weight: bold;
+}
+
+h2.Activité
+{
+	width: 100%;
+	padding:5px ;
+	margin:10px 10px 10px 0px ;
+}
+
+
+.imgactivité
+{
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0px;
+	width: 280px;
+	height: 118px;
+	object-fit: cover;
+
+}
+
+.imgactivité1
+{
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0px;
+	width: 280px;
+	height: 305px;
+	object-fit: cover;
+}
+
+.imgactivité2
+{
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0px;
+	width: 280px;
+	height: 118px;
+	object-fit: cover;
+	object-position: top;
+
+}
+
+.figactivité 
+{
+	height: auto;
+	padding: 0px 0px 5px 0px;
+	border: 2px solid ;
+	width: 280px;
+	margin: 10px 5px 10px 10px;
+	border-radius: 17px;
+}
+
+
+figcaption
+{
+	color: black;
+	padding: 10px ;
+	margin-left: 0px;
+
+}
+
+.section2
+{
+	width: auto;
+	margin: 30px 0px 30px 0px;
+	background-color: white;
+}
+
+footer
 {
 
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	background-color: #F2F2F2;
+
 }
 
+.liste ul
+{
+	list-style-type: none;
+	padding-left: 0px;
+
+}
+
+.liste li
+{
+	padding: 3px 0px 10px 0px;
+
+}
+
+@media screen and (max-width:570px)
+
+{
+	
+	{
+		;
+	}
+}
