@@ -21,8 +21,8 @@ nav.container-grille
 	"logo nav " ;
 }
 
-.logo{
-
+#logo
+{
 	grid-area: logo;
 }
 
