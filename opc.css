@@ -45,6 +45,7 @@ nav a:hover
 {
 	font-weight: bold;
 	color: #0065FC;
+	font-size: 1.6em;
 }
 
 h1{
@@ -179,7 +180,7 @@ button
 	align-items: center;
 	color:#0065FC ;
 	border-radius:70%;
-	padding:15px 15px 15px 20apx;
+	padding:10px 10px 10px 15px;
 	background-color: white;
 	margin: 15px 15px 15px 0px;
 	border: 2px solid#F2F2F2;
@@ -434,14 +435,57 @@ footer
 .liste li
 {
 	padding: 3px 0px 10px 0px;
-
 }
 
-@media screen and (max-width:570px)
+
+@media screen and (max-width:900px)
 
 {
-	
+
+		header
 	{
-		;
+		display: flex;
+		justify-content: space-around;
+		align-items: flex-start;
+		flex-direction: column;
 	}
-}
+
+		nav ul
+	{
+		list-style-type: none;
+		display: flex;
+		align-self: center;
+	}
+
+		nav li
+	{
+		margin-right: 35px;
+		display: flex;
+	
+	}
+
+		nav a
+	{
+		font-size: 1.6em;
+		color:black ;
+		text-decoration: none;
+
+
+	}
+
+		nav a:hover
+	{
+		color: #0065FC;
+		border-top: 2px solid #0065FC;
+	}
+
+		.inscrire
+	{
+		position:absolute;
+		top: 0px;
+		right: 0px;
+		padding-top: 20px;
+	}
+
+	
+}	
