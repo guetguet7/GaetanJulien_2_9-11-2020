@@ -9,44 +9,68 @@ body{
     font-size: 16px;
     color: black;
 }
-header
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
 
-nav ul
+nav.container-grille
 {
-    list-style-type: none;
-    display: flex;
-}
-
-nav li
-{
-    margin-right: 35px;
-}
-
-nav a
-{
-    font-size: 1.6em;
-    color:black ;
-    padding-top: 15px;
-    text-decoration: none;
-}
-
-nav a:hover
-{
-    color: #0065FC;
-    border-top: 2px solid #0065FC;
-}
-
-.inscrire
-{
-	font-weight: bold;
-	color: #0065FC;
+	height:20vh;
+	display: grid;
 	font-size: 1.6em;
+	grid-template-columns: repeat(2, 1fr);
+
+	grid-template-areas:
+	"logo nav " ;
 }
+
+.logo{
+
+	grid-area: logo;
+}
+
+.nav-liste{
+
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+}
+
+.heberge{
+
+grid-area: heberge;
+margin: 15px;
+
+}
+
+.activite{
+
+grid-area: activite;
+margin: 15px;
+}
+
+.inscrire{
+
+grid-area: inscrire;
+color: #0065FC;
+margin: 15px;
+}
+
+a 
+{
+	text-decoration: none;
+	color: black;
+}
+
+a:hover
+{
+	border-top: 2px solid #0065FC;
+	color: #0065FC;
+	padding-top: 15px;
+}
+
+
+
+
+
+
 
 h1{
     font-size: 20px;
@@ -172,7 +196,6 @@ button
 	display:flex;
 	flex-direction: row;
 	border: none;
-
 }
 
 .iconeinfo
@@ -195,14 +218,26 @@ button
 	color: grey;
 }
 
+main
+{
+	display: flex;
+}
+
+.sectionaside
+{
+	display:flex;
+	width: 100%;
+}
+
 section 
 {
 	flex-wrap: wrap;
-	width: 800px;
+	flex-direction: row;
 	background-color: #F2F2F2;
-	padding: 20px;
+	padding: 30px;
 	border-radius: 10px;
-	margin-left: 20px;
+	width: 800px;
+
 }
 
 figure
@@ -210,6 +245,7 @@ figure
 	display: flex;
 	margin: 10px;
 	flex-wrap: wrap;
+	align-items: center;
 	border: none;
 	padding:5px;
 	width: 230px;
@@ -228,19 +264,14 @@ figcaption.legende
 {
 	padding: 5px;
 	color: #0065CF;
+	display: flex;
+	flex-direction: row;
 }
 
 .imgsection
 {
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
-}
-
-.iconestars
-{
-	display: flex;
-	flex-direction: row;
-
 }
 
 h2
@@ -261,25 +292,19 @@ h3
 .Afficherplus
 {
 	font-weight: bold;
-	padding-left: 10px;
+	padding-top: 10px;
 }
 
 aside
 {
 	display: flex;
-
 	flex-direction: column;
-	margin-left: 70px;
+	margin-left: 40px;
 	background-color: #F2F2F2;
 	border-radius: 10px;
-	width: 350px;
 	padding: 5px;
-}
-
-main
-{
-	display: flex;
-	flex-direction: row;
+	width: 400px;
+	align-items: center;
 }
 
 .titre
@@ -295,18 +320,7 @@ main
 	height: 130px;
 	width:300px;
 	flex-direction: column;
-}
-
-.Afficherplus
-{
-	display: flex;
-	justify-content:flex-end;
-	align-items: flex-end;
-}
-
-.sectionaside
-{
-	display:flex;
+	align-items: flex-start;
 
 }
 
@@ -327,7 +341,6 @@ main
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
 	margin:0px;
-
 }
 
 .photosection2
@@ -336,8 +349,7 @@ main
 	display: flex;
 	flex-direction:column;
 	flex-wrap: wrap;
-
-	max-width: 100%;
+	max-width: 80%;
 	max-height: 500px;
 	font-weight: bold;
 }
@@ -405,7 +417,6 @@ figcaption
 	color: black;
 	padding: 10px ;
 	margin-left: 0px;
-
 }
 
 .section2
@@ -422,7 +433,7 @@ footer
 	justify-content: space-around;
 	flex-direction: row;
 	background-color: #F2F2F2;
-
+	width: 100%;
 }
 
 .liste ul
@@ -438,54 +449,61 @@ footer
 }
 
 
-@media screen and (max-width:900px)
+@media screen and (max-width:1024px)
 
 {
 
-		header
+	nav.container-grille
 	{
-		display: flex;
-		justify-content: space-around;
-		align-items: flex-start;
-		flex-direction: column;
-	}
-
-		nav ul
-	{
-		list-style-type: none;
-		display: flex;
-		align-self: center;
-	}
-
-		nav li
-	{
-		margin-right: 35px;
-		display: flex;
-	
-	}
-
-		nav a
-	{
+		height:20vh;
+		display: grid;
+		flex-direction: row;
 		font-size: 1.6em;
-		color:black ;
-		text-decoration: none;
-
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas:"logo .inscrire";
+		
 
 	}
 
-		nav a:hover
-	{
-		color: #0065FC;
-		border-top: 2px solid #0065FC;
-	}
+		.logo
+		{
+			max-width: 70%;
+			padding: 0;
+			margin: 0;
+		}
 
-		.inscrire
-	{
-		position:absolute;
-		top: 0px;
-		right: 0px;
-		padding-top: 20px;
-	}
+		.heberge + .activite
+		{
+			display: flex;
+			flex-direction: column;
+		}
 
+		main 
+		{
+			flex-direction: column;
+		}
+
+		aside
+		{
+			order: -2;
+			display: flex;
+			flex-wrap: wrap;
+
+		}
+
+		.sectionaside
+		{
+			display: flex;
+			order: -1;
+			flex-direction: column;
+			
 	
-}	
+		}
+
+
+
+
+
+
+
+	}
