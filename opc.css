@@ -21,11 +21,8 @@ nav.container-grille
 	height: 100px;
 	display: grid;
 	font-size: 1.6em;
-<<<<<<< HEAD
 	grid-template-columns:1fr 200px 150px 150px;
-=======
 	grid-template-columns: repeat(2, 1fr);
-
 	grid-template-areas:
 	"logo nav " ;
 }
