@@ -22,17 +22,6 @@ nav.container-grille
 	display: grid;
 	font-size: 1.6em;
 	grid-template-columns:1fr 200px 150px 150px;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-areas:
-	"logo nav " ;
-}
-
-
-#logo{
-
-
-	grid-area: logo;
->>>>>>> main
 }
 
 #logo
