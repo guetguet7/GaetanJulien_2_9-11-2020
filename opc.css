@@ -38,7 +38,6 @@ a
 	display: flex;
 	justify-content:center;
 	align-items: center;
-
 }
 
 a:hover
@@ -53,11 +52,12 @@ nav span
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 }
+
 							/*BARRE DE RECHERCHE ET FILTRE*/
 
-h1{
+h1
+{
     font-size: 24px;
 }
 
@@ -135,7 +135,7 @@ button
 	border-radius: 80px;
 	font-weight:bold;
 	padding: 0px 30px 0px 0px;
-	width: auto;
+
 }
 
 .iconename:hover
@@ -207,12 +207,14 @@ button
 	align-items: center;
 	color: grey;
 }
-							/* SECTION HEBERGEMENT */
+
+							
+										/*MAIN comprend hebergement et mon aside*/
 main
 {
 	display: flex;
 }
-
+										/* SECTION HEBERGEMENT */
 .sectionhebergement
 {
 	display:flex;
@@ -570,13 +572,14 @@ footer
 
 	aside figure
 	{
-		width: 80%;
+		width: 95%;
 	}
 
 	figure
 	{
-		width: 80%;
+		width:95%;
 		flex-direction:row;
+
 	}
 
 	.imgaside
@@ -636,17 +639,24 @@ footer
 
 	@media screen and (max-width: 500px)
 {
+	a 
+	{
+		padding: 15px;
+	}
+
 	figure
 	{
 		flex-direction: column;
 		align-items: flex-start;
+		padding: 5px 0 5px 5px;
+		margin: 10px 0 10px 0;
 		border-top-right-radius: 10px;
 		border-bottom-left-radius: 10px;
 	}
 	.imgsection
 	{
-	border-bottom-left-radius: 0;
-	border-top-right-radius: 10px;
+		border-bottom-left-radius: 0;
+		border-top-right-radius: 10px;
 	}
 
 	.imgactivité
